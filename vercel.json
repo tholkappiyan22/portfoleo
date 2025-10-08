@@ -3,7 +3,6 @@
   "name": "portfolio-tholkappiyan",
   "cleanUrls": true,
   "trailingSlash": false,
-  "static": true,
   "headers": [
     {
       "source": "/portfolio.jpg",

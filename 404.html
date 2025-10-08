@@ -4,21 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Page Not Found | Tholkappiyan E</title>
+  <meta name="robots" content="noindex" />
   <style>
     body {margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;background:#0f172a;color:#f1f5f9;padding:1rem;text-align:center}
-  h1 {font-size:clamp(2.5rem,6vw,4rem);margin:.2em 0;background:linear-gradient(90deg,#3b82f6,#6366f1);-webkit-background-clip:text;background-clip:text;color:transparent}
+    h1 {font-size:clamp(2.5rem,6vw,4rem);margin:.2em 0;background:linear-gradient(90deg,#3b82f6,#6366f1);-webkit-background-clip:text;background-clip:text;color:transparent}
     p {max-width:560px;margin:0 auto 1.25rem;line-height:1.5;color:#cbd5e1}
     a {display:inline-block;margin-top:.25rem;background:#2563eb;color:#fff;padding:.75rem 1.25rem;border-radius:8px;font-weight:600;text-decoration:none;box-shadow:0 4px 12px -2px rgba(37,99,235,.4);transition:.25s}
     a:hover {background:#1d4ed8;transform:translateY(-2px);box-shadow:0 6px 16px -2px rgba(37,99,235,.55)}
-    .code {font-family:monospace;padding:.25rem .5rem;background:#1e293b;border-radius:6px;color:#f59e0b}
   </style>
 </head>
 <body>
   <main>
     <h1>404</h1>
-    <p>The page you were looking for doesn't exist or has moved. You can return to the main portfolio page.</p>
-    <a href="/">Go to Home</a>
-    <p style="margin-top:2rem;font-size:.8rem;opacity:.6">Custom 404 • Protecting good UX</p>
+    <p>The page you were looking for doesn't exist. Return to the homepage or view the full portfolio page.</p>
+    <div style="margin-top:1rem;display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap">
+      <a href="/">Home</a>
+      <a href="/portfolio.html" style="background:#475569">Full Portfolio</a>
+    </div>
+    <p style="margin-top:2rem;font-size:.75rem;opacity:.55">Custom 404 • Better UX</p>
   </main>
 </body>
 </html>

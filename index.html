@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tholkappiyan E - Software Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Tholkappiyan E – Software Developer | AI & Data Science Enthusiast.">
+    <meta property="og:title" content="Tholkappiyan E - Software Developer Portfolio">
+    <meta property="og:description" content="AI & Data Science Enthusiast | Projects, Skills, Experience, Contact.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <meta property="og:image" content="/portfolio.jpg">
+    <link rel="icon" type="image/png" href="/portfolio.jpg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {font-family: 'Inter', system-ui, sans-serif; background:#f8f9fa; color:#212529;}
+        .skill-chip {transition:all .2s ease-in-out}
+        .skill-chip:hover {transform:translateY(-2px);box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1)}
+        .section-heading {border-left:5px solid #007bff}
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Reusing content from portfolio.html -->
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="flex flex-col items-start">
+                    <img src="portfolio.jpg" alt="Profile photo of Tholkappiyan E" class="w-24 h-24 object-cover rounded-full border-4 border-blue-100 shadow-md" />
+                    <span class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 leading-none uppercase drop-shadow-sm">THOLKAPPIYAN E</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#skills" class="text-gray-600 hover:text-blue-600 transition">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-blue-600 transition">Projects</a>
+                <a href="#experience" class="text-gray-600 hover:text-blue-600 transition">Experience</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-20">
+        <section id="hero" class="text-center py-16 md:py-24 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl shadow-lg mb-16">
+            <div class="space-y-4">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">Hello, I'm <span class="text-blue-600">Tholkappiyan E</span></h1>
+                <p class="text-xl md:text-2xl text-gray-700 font-medium">Software Developer | AI & Data Science Enthusiast</p>
+                <p class="max-w-3xl mx-auto text-gray-600 mt-4">Motivated tech professional proficient in Deep Learning, full-stack development, and building scalable, data-driven applications and interested in web designing.</p>
+            </div>
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition transform hover:scale-[1.02]">View Projects</a>
+                <a href="https://github.com/tholkappiyan22" target="_blank" class="bg-gray-800 hover:bg-gray-900 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition transform hover:scale-[1.02] flex items-center"><span data-lucide="github" class="w-5 h-5 mr-2"></span> GitHub Profile</a>
+                <a href="https://www.linkedin.com/in/tholkappiyan22/" target="_blank" class="bg-[#0A66C2] hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition transform hover:scale-[1.02] flex items-center"><span data-lucide="linkedin" class="w-5 h-5 mr-2"></span> LinkedIn Profile</a>
+            </div>
+        </section>
+        <!-- Simple link to full detailed page -->
+        <div class="text-center mb-16">
+            <p class="text-gray-600">Looking for the full detailed portfolio page?</p>
+            <a href="portfolio.html" class="text-blue-600 font-semibold hover:underline">Open full portfolio (original version)</a>
+        </div>
+    </main>
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <p class="text-sm text-gray-400">&copy; 2025 Tholkappiyan E. All rights reserved.</p>
+    </footer>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
