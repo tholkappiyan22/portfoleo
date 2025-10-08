@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "portfolio-tholkappiyan",
+  "trailingSlash": false,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/portfolio.html" }
+  ],
+  "headers": [
+    {
+      "source": "/portfolio.jpg",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=604800, immutable" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tholkappiyan E - Software Developer Portfolio</title>
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for aesthetic vectors -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom font and base styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* Light gray background */
+            color: #212529; /* Dark text */
+        }
+        /* Style for the skill chips */
+        .skill-chip {
+            transition: all 0.2s ease-in-out;
+        }
+        .skill-chip:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        .section-heading {
+            border-left: 5px solid #007bff; /* Primary blue color for emphasis */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Left: Profile Photo + Name -->
+            <div class="flex items-center space-x-4">
+                <div class="flex flex-col items-start">
+                    <img src="portfolio.jpg" alt="Profile photo of Tholkappiyan E" class="w-24 h-24 object-cover rounded-full border-4 border-blue-100 shadow-md" />
+                    <span class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 leading-none uppercase drop-shadow-sm">THOLKAPPIYAN E</span>
+                </div>
+            </div>
+
+            <!-- Right: Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-150">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-blue-600 transition duration-150">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-blue-600 transition duration-150">Projects</a>
+                <a href="#experience" class="text-gray-600 hover:text-blue-600 transition duration-150">Experience</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-150">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-20">
+
+        <!-- 1. Hero Section (Introduction) -->
+        <section id="hero" class="text-center py-16 md:py-24 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl shadow-lg mb-16">
+            <div class="space-y-4">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+                    Hello, I'm <span class="text-blue-600">Tholkappiyan E</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-700 font-medium">
+                    Software Developer | AI & Data Science Enthusiast
+                </p>
+                <p class="max-w-3xl mx-auto text-gray-600 mt-4">
+                    Motivated tech professional proficient in Deep Learning, full-stack development, and building scalable, data-driven applications and interested in web designing.
+                </p>
+            </div>
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 transform hover:scale-[1.02]">
+                    View Projects
+                </a>
+                <a href="https://github.com/tholkappiyan22" target="_blank" class="bg-gray-800 hover:bg-gray-900 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 transform hover:scale-[1.02] flex items-center">
+                    <span data-lucide="github" class="w-5 h-5 mr-2"></span> GitHub Profile
+                </a>
+                <a href="https://www.linkedin.com/in/tholkappiyan22/" target="_blank" class="bg-[#0A66C2] hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 transform hover:scale-[1.02] flex items-center">
+                    <span data-lucide="linkedin" class="w-5 h-5 mr-2"></span> LinkedIn Profile
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. Skills Section -->
+        <section id="skills" class="py-12">
+            <h2 class="section-heading text-3xl font-bold pl-4 mb-8">Core Skills</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Technical Skills -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <span data-lucide="code" class="w-6 h-6 mr-2 text-blue-600"></span> Technical Stack
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <!-- AI/ML/Data -->
+                        <span class="skill-chip bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium">AI & ML</span>
+                        <span class="skill-chip bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium">TensorFlow, PyTorch</span>
+                        <span class="skill-chip bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium">Data Science (Pandas, SQL)</span>
+                        
+                        <!-- Languages & Frameworks -->
+                        <span class="skill-chip bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">Python</span>
+                        <span class="skill-chip bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">Java</span>
+                        <span class="skill-chip bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">React.Js</span>
+                        <span class="skill-chip bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">HTML & CSS</span>
+                        
+                        <!-- General -->
+                        <span class="skill-chip bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm font-medium">REST APIs</span>
+                        <span class="skill-chip bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm font-medium">SDLC</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills & Tools -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <span data-lucide="user-check" class="w-6 h-6 mr-2 text-blue-600"></span> Professional Attributes
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-chip bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">Multitasking</span>
+                        <span class="skill-chip bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">Team Worker</span>
+                        <span class="skill-chip bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">Leadership Quality</span>
+                        <span class="skill-chip bg-pink-100 text-pink-800 px-4 py-2 rounded-full text-sm font-medium">MS Office Suite (Word, Excel, PPT)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 3. Projects Section -->
+        <section id="projects" class="py-12">
+            <h2 class="section-heading text-3xl font-bold pl-4 mb-8">Featured Projects</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Project 1: Face Mask Detection -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-600 transform hover:scale-[1.01] transition duration-300">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">FACE MASK DETECTION</h3>
+                    <p class="text-sm font-medium text-blue-600 mb-4">01/2024 - 05/2024 | Deep Learning, Computer Vision</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Built a "real-time face mask detection system" leveraging Deep Learning with TensorFlow and OpenCV.</li>
+                        <li>Trained a custom CNN model that achieved "over 95% accuracy" in identifying mask compliance from video streams.</li>
+                        <li>Deployed the solution to automate the monitoring of safety protocols, showcasing practical application of Computer Vision models.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 2: LAWEAZE -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-indigo-600 transform hover:scale-[1.01] transition duration-300">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">LAWEAZE (Legal Chatbot)</h3>
+                    <p class="text-sm font-medium text-indigo-600 mb-4">01/2025 - 04/2025 | NLP, NLU, Conversational AI</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Developed a legal chatbot using "NLP" to interpret user queries and provide automated, section-based legal information.</li>
+                        <li>Integrated an "NLU engine" to achieve accurate mapping between user questions and legal statutes, boosting usability for non-experts.</li>
+                        <li>Designed a user-friendly conversational interface that significantly improved the accessibility of complex legal knowledge.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 4. Experience & Education -->
+        <section id="experience" class="py-12">
+            <h2 class="section-heading text-3xl font-bold pl-4 mb-8">Experience & Education</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Internship Card -->
+                <div class="lg:col-span-2 bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3 flex items-center">
+                        <span data-lucide="briefcase" class="w-6 h-6 mr-2 text-red-600"></span> Internship Experience
+                    </h3>
+                    <p class="text-lg font-semibold text-red-600 mb-2">Network Security & Ethical Hacking</p>
+                    <p class="text-sm text-gray-500 mb-4">APRIL 2024</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Gained hands-on experience in "network security, ethical hacking, and threat analysis" using tools like "Wireshark and Kali Linux".</li>
+                        <li>Skilled in cyber attack prevention, including phishing detection, malware analysis, and firewall configuration.</li>
+                        <li>Developed a strong understanding of the "CIA triad" (Confidentiality, Integrity, Availability) and its application in modern security systems.</li>
+                    </ul>
+                </div>
+                
+                <!-- Education Card -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3 flex items-center">
+                        <span data-lucide="graduation-cap" class="w-6 h-6 mr-2 text-teal-600"></span> Education
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="font-semibold text-lg">Artificial Intelligence and Data Science</p>
+                            <p class="text-blue-600">Agni College of Technology</p>
+                            <p class="text-sm text-gray-500">2022 - 2026 | CGPA: 7.8</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="font-semibold text-lg">Higher Secondary (12th Grade)</p>
+                            <p class="text-blue-600">AKT Academy Matriculation Higher Secondary School</p>
+                            <p class="text-sm text-gray-500">2022 | Percentage: 75%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certifications & Achievements -->
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3 flex items-center">
+                        <span data-lucide="award" class="w-6 h-6 mr-2 text-yellow-600"></span> Achievements
+                    </h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Won a Paper Presentation in Saveetha School of Engineering.</li>
+                        <li>Attended IDE boot camp phase 2 for Entrepreneurship development conducted by Government of India.</li>
+                        <li>Coordinated the technical event in college symposium.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3 flex items-center">
+                        <span data-lucide="certificate" class="w-6 h-6 mr-2 text-purple-600"></span> Certifications
+                    </h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Joy of Computing using Python - NPTEL (Jan 2023 - Apr 2023)</li>
+                        <li>C-Programming Course - Skill Rack (2023)</li>
+                        <li>Full stack development - UDEMY (Dec 2024 - Mar 2025)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Contact Section -->
+        <section id="contact" class="py-12 text-center bg-gray-800 text-white rounded-xl shadow-2xl">
+            <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto text-gray-300">
+                I'm currently seeking a role to apply my technical skills in AI, Web Designing, and Software Development. Feel free to connect regarding opportunities or collaborations!
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="flex items-center space-x-2">
+                    <span data-lucide="mail" class="w-6 h-6 text-blue-400"></span>
+                    <a href="mailto:kappiyan22@gmail.com" class="hover:text-blue-400 transition">kappiyan22@gmail.com</a>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span data-lucide="phone" class="w-6 h-6 text-blue-400"></span>
+                    <a href="tel:+916369622866" class="hover:text-blue-400 transition">+91 63696 22866</a>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span data-lucide="map-pin" class="w-6 h-6 text-blue-400"></span>
+                    <span>Chennai, Solinganalur, India</span>
+                </div>
+            </div>
+            <div class="mt-8">
+                <a href="https://github.com/tholkappiyan22" target="_blank" class="text-gray-400 hover:text-white transition mx-3">
+                    <span data-lucide="github" class="w-8 h-8 inline-block"></span>
+                </a>
+                <a href="https://www.linkedin.com/in/tholkappiyan22/" target="_blank" class="text-gray-400 hover:text-white transition mx-3" aria-label="LinkedIn Profile">
+                    <span data-lucide="linkedin" class="w-8 h-8 inline-block"></span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <p class="text-sm text-gray-400">&copy; 2025 Tholkappiyan E. All rights reserved. | Built with HTML & Tailwind CSS.</p>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
